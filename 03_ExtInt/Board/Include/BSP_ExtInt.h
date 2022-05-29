@@ -4,6 +4,7 @@
 #include "BSP_Key.h"					//Key驱动头文件
 #include "BSP_Led.h"					//Led头文件
 
+//用于中断更改该标志位，在主函数中查询该标志位确定是否执行呼吸灯
 extern int BreathLedstate;
 
 void BSP_ExtInt_Init(void);
